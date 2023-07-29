@@ -1,0 +1,335 @@
+@import "variables";
+
+$hFont: var($fontSecondary);
+@each $h in h1, h2, h3, h4, h5, h6 {
+  #{$h} {
+    font-family: $hFont;
+  }
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+    border-radius: 30px;
+  }
+}
+// change default bootstrap navbar toggler from dark to red
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(206, 18, 18)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+// Start header
+header {
+  z-index: 3;
+  height: 80px;
+  border-bottom: 1px solid $bgColor;
+}
+.header.sticked {
+  border-color: #fff;
+  border-color: #eee;
+}
+.btn-book:hover {
+  background-color: $hoverColor !important;
+  box-shadow: $boxShadow;
+  transition: 1s !important;
+}
+header nav ul li a {
+  transition: 1s all ease;
+  &.active {
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      background: var($primaryColor);
+      width: 100%;
+      height: 2px;
+      left: 0;
+      overflow: hidden;
+    }
+  }
+  &::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: $primaryColor;
+    transition: 0.5s;
+    margin: auto;
+    display: block;
+  }
+  &:not(.active):hover::after {
+    width: 100%;
+    color: black;
+  }
+}
+// <!-- End Header -->
+//<!-- hero  -->
+.hero {
+  padding: 112px 0 60px 0 !important;
+  min-height: 60vh;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  h2 {
+    margin-bottom: 15px;
+    font-family: $fontSecondary;
+  }
+  p {
+    color: #4f4f5a !important;
+  }
+}
+// <!-- End hero section -->
+
+// About
+.about-img {
+  min-height: 500px;
+}
+.call-us {
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+}
+.play-btn {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  right: calc(50% - 47px);
+  top: calc(50% - 47px);
+  background: radial-gradient($primaryColor 50%, rgba(206, 18, 18, 0.4) 52%);
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 1;
+  }
+}
+// <!-- End About Section -->
+
+// <!-- Why Us Section -->
+.whyUs {
+  padding: 80px 0 60px 0;
+  .why-box {
+    padding: 35px !important;
+  }
+  .card-box {
+    border: 1px solid rgba(55, 55, 63, 0.1);
+    padding: 40px 30px !important;
+    transition: 0.5s;
+    i {
+      width: 64px;
+      height: 64px;
+      background: #ce12121a;
+    }
+  }
+  .more-btn {
+    background: $moreBtn;
+    &:hover {
+      background-color: #fff;
+      color: $primaryColor !important;
+      transition: 1s all;
+    }
+  }
+}
+// <!-- End why Us Section -->
+
+// <!-- Number Section -->
+.number-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/stats-bg.jpg") center center;
+  background-size: cover;
+  // padding: 100px 0 !important;
+  p {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+}
+//<!-- End Number Section -->
+.menu {
+  ul {
+    li {
+      border-bottom: 2px solid #b6b6bf !important;
+      cursor: pointer;
+      height: 100%;
+      margin: 0 8px;
+      transition: 0.3s;
+      &:hover {
+        color: $primaryColor;
+      }
+      a {
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+      .active {
+        color: $primaryColor !important;
+        border-color: $primaryColor;
+        border-bottom: 2px solid $primaryColor !important;
+      }
+    }
+  }
+}
+
+// <!-- ==== Testimonials Section ==== -->
+.testimonials {
+  overflow: hidden;
+  .testimonial-content {
+    padding-left: 30px;
+    p i {
+      color: #f05656;
+      line-height: 0 !important;
+    }
+  }
+  .testimonial-img {
+    border-radius: 50% !important;
+  }
+  .stars {
+    color: $stars;
+  }
+}
+// <!-- End Testimonials Section -->
+
+// .swiper slider Testimonials & Gallery
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #d1d1d7;
+    opacity: 1;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: $primaryColor !important;
+}
+
+// <!-- Chefs Section -->
+.chefs .chef-member {
+  transition: 0.2s;
+  .member-img:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../images/team-shape.svg) no-repeat center bottom;
+    background-size: contain;
+    z-index: 4;
+  }
+  .social {
+    right: -100%;
+    top: 30px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;
+    background: #ffffff4d;
+    a {
+      transition: color 0.3s;
+      color: $chefColor;
+      &:hover {
+        color: rgba(55, 55, 63, 0.9);
+      }
+    }
+  }
+  .member-info {
+    padding: 10px 10px 20px 15px;
+  }
+  span {
+    color: $chefPSpan;
+  }
+  p {
+    line-height: 26px;
+    color: $chefPSpan;
+  }
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0 30px $chefColor;
+    &:hover .social {
+      right: 8px;
+      opacity: 1;
+    }
+  }
+}
+
+.contact .row {
+  .icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    background: $primaryColor !important;
+    margin-right: 15px;
+  }
+}
+
+// Start Footer
+footer {
+  .icon {
+    line-height: 0;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+    &:hover {
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+  .copyright {
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-top: 30px !important;
+  }
+}
+// End footer
+
+// Start media queries
+@media (max-width: 991px) {
+  .key{
+   background-color: #fff;
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-box {
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: var(--box-shadow);
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+   nav ul li a{
+    transition: 1s ease;
+  }
+   .hero{
+     .btn-book{
+      font-size: 13px !important;
+    }
+   }
+}
