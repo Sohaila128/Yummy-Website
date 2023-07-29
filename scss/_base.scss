@@ -44,20 +44,6 @@ header {
   transition: 1s !important;
 }
 header nav ul li a {
-  transition: .2s all ease;
-  &.active {
-    position: relative;
-    overflow: hidden;
-    &::after {
-      content: "";
-      position: absolute;
-      background: var($primaryColor);
-      width: 100%;
-      height: 2px;
-      left: 0;
-      overflow: hidden;
-    }
-  }
   &::after {
     content: "";
     height: 2px;
@@ -67,7 +53,7 @@ header nav ul li a {
     margin: auto;
     display: block;
   }
-  &:not(.active):hover::after {
+  &:hover::after {
     width: 100%;
     color: black;
   }
@@ -257,12 +243,11 @@ header nav ul li a {
     line-height: 26px;
     color: $chefPSpan;
   }
-  
-    &:hover .social {
-      right: 8px;
-      opacity: 1;
-    }
-  
+
+  &:hover .social {
+    right: 8px;
+    opacity: 1;
+  }
 }
 
 .contact .row {
@@ -303,15 +288,13 @@ footer {
 }
 // End footer
 
-.collapse.show{
-  transition: .2s ease !important;
-}
-
 // Start media queries
 @media (max-width: 991px) {
-  .key{
-   background-color: #fff;
-    height: 100vh !important;
+  .key {
+    background-color: #fff;
+  }
+  .btn-book {
+    display: none;
   }
 }
 
@@ -322,13 +305,23 @@ footer {
       box-shadow: var(--box-shadow);
     }
   }
-  .chefs .chef-member{
-      &:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 0 30px $chefColor;
-      }
+  .chefs .chef-member {
+    &:hover {
+      transform: scale(1.08);
+      box-shadow: 0px 0 30px $chefColor;
+    }
   }
 }
 
-
-
+@media (max-width: 300px) {
+  .btn-nav {
+    display: none;
+  }
+  .btn-book {
+    padding: 3px 14px 0 14px;
+  }
+  .watch {
+    font-size: 15px;
+    margin-right: 0;
+  }
+}

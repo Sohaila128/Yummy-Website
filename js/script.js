@@ -1,11 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-   const navToggler = document.querySelector(".navbar-toggler");
   const navbarCollapse = document.querySelector(".navbar-collapse");
-  function toggleNavbarCollapse() {
-    navbarCollapse.classList.toggle("show");
-  }
-  navToggler.addEventListener("click", toggleNavbarCollapse);
   const ancorLinks = document.querySelectorAll(".nav-link");
   ancorLinks.forEach((ancor) => {
     ancor.addEventListener("click", function () {
@@ -13,8 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navbarCollapse.classList.remove("show");
       }
     });
- });
-
+  });
   //  pure counter
   new PureCounter();
 
@@ -96,6 +89,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", () => {
     initAOS();
   });
-
 });
-
