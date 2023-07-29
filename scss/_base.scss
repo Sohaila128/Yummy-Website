@@ -44,7 +44,7 @@ header {
   transition: 1s !important;
 }
 header nav ul li a {
-  transition: 1s all ease;
+  transition: .2s all ease;
   &.active {
     position: relative;
     overflow: hidden;
@@ -257,14 +257,12 @@ header nav ul li a {
     line-height: 26px;
     color: $chefPSpan;
   }
-  &:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 0 30px $chefColor;
+  
     &:hover .social {
       right: 8px;
       opacity: 1;
     }
-  }
+  
 }
 
 .contact .row {
@@ -305,6 +303,10 @@ footer {
 }
 // End footer
 
+.collapse.show{
+  transition: .2s ease !important;
+}
+
 // Start media queries
 @media (max-width: 991px) {
   .key{
@@ -320,16 +322,13 @@ footer {
       box-shadow: var(--box-shadow);
     }
   }
-}
-
-
-@media (max-width: 375px) {
-   nav ul li a{
-    transition: 1s ease;
+  .chefs .chef-member{
+      &:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0 30px $chefColor;
+      }
   }
-   .hero{
-     .btn-book{
-      font-size: 13px !important;
-    }
-   }
 }
+
+
+
