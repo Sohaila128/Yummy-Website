@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- bootstrap-icon css file -->
+    <link rel="stylesheet" href="Assets/bootstrap-icon/bootstrap-icons.css">
+    <!-- animation library css file -->
+    <link rel="stylesheet" href="Assets/aos/aos.css">
+    <!-- glightbox css file -->
+    <link rel="stylesheet" href="Assets/glightbox/css/glightbox.min.css">
+      <!-- swiper css file -->
+      <link rel="stylesheet" href="Assets/swiper/swiper-bundle.min.css">
+    <!-- FancyBox  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- input cdn  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
+    <!-- include Navbar  -->
+    <script src="js/renderPageLayout.js"></script>
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.svg">
+
+    <title> Body Force Website </title>
+  </head>
+  <body>
+      <!-- Start loader  -->
+      <div id="loader" class="loader" style="display: none;">
+        <div class="spinner d-flex justify-content-evenly">
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+        </div>
+      </div>
+      <!-- End Loader  -->
+
+  
+
+    <!-- Start NavBar  -->
+    <script>
+      showCubNavbarAfterLogin();
+    </script>
+    <div class="border-bottom"></div>
+    <!-- End NavBar  -->
+
+    <section class="">
+      <div class="container-fluid">
+        <div class="row bg-secondary">
+          <button  class="btn btn-link d-lg-none d-flex text-decoration-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasfilter" aria-controls="offcanvasRight">
+            <i class="fa-solid fa-filter text-primary fs-3 d-flex justify-content-start p-0"></i>
+            <span class="fw-semibold mx-2">Filter</span>
+          </button>
+        <div class="col-lg-3 bg-secondary h-100 d-none d-lg-block">
+          <div class="py-8 d-flex flex-column justify-content-end align-items-end mx-6">
+            <div>
+              <div class="color-circle">
+                <img src="images/Mask group.svg" alt="">
+              </div>
+              <h6 class="fw-semibold mt-3">Sarah Ayman</h6>
+            </div>
+            <div class="nav flex-column nav-pills my-profile-club" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a href="my-profile-club.html" class="nav-link d-flex justify-content-start align-items-center text-black fw-semibold" >  <span class="mx-2">My Profile</span></a>
+              
+              <a href="my-profile-pass.html" class="nav-link d-flex justify-content-start align-items-center text-black fw-semibold" > 
+               <span class="mx-2"> Password</span></a>
+
+              <a href="my-profile-membership.html" class="nav-link d-flex justify-content-start align-items-center text-black fw-semibold active"> 
+               <span class="mx-2">  Membership</span></a>
+              <a href="my-profile-classes-history.html" class="nav-link d-flex justify-content-start align-items-center text-black fw-semibold"> 
+               <span class="mx-2">  Classes history</span></a>
+            </div>
+          </div>
+        </div>
+          <!-- Start Filter Sidebar  -->
+          <script>
+            filterSidebar();
+          </script>
+          <!-- Start Filter Sidebar  -->
+        <div class="col-lg-9 bg-white">
+          <div class="mx-3">      
+      <!-- start tap content  -->
+          <div class="">
+            <div class="">
+              <div class="py-5 container">
+                <h2 class="text-blue fw-bold mt-4">Membership</h2>
+              
+    <div class="col-lg-6 mx-3">
+      <ul class="nav nav-pills nav-width py-1 mb-3 mt-5 border-bottom bg-secondary" id="pills-tab" role="tablist">
+          <li class="nav-item col-md-6" role="presentation">
+              <button class="nav-link rounded-1 py-1 mx-2 active" id="pills-my-card-tab" data-bs-toggle="pill" data-bs-target="#pills-my-card" type="button" role="tab" aria-controls="pills-my-card" aria-selected="true">my-card</button>
+          </li>
+          <li class="nav-item col-md-6" role="presentation">
+              <button class="nav-link rounded-1 py-1 mx-2" id="pills-my-family-tab" data-bs-toggle="pill" data-bs-target="#pills-my-family" type="button" role="tab" aria-controls="pills-my-family" aria-selected="false">my-family</button>
+          </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-my-card" role="tabpanel" aria-labelledby="pills-my-card-tab" tabindex="0">
+            <div class="card border-0 rounded-top col-md-8 col-lg-12 col-xl-10 mb-3" data-bs-toggle="modal" data-bs-target="#membership">
+              <div class="card border-0 rounded-top col-md-12 col-lg-12 col-xl-10 mb-3">
+                <img src="images/Group 1000002843.png" class="card-img img-fluid" alt="...">
+                <div class="card-img-overlay d-flex flex-column justify-content-center">
+                    <p class="fs-7 text-white mb-1 p-0">Membership No</p>
+                    <h5 class="card-title text-white">123-456-789</h5>
+                    <h5 class="card-title text-white">Ahmed Mohamed</h5>
+                    <div class="d-flex justify-content-between">
+                        <p class="card-text text-warning fs-7"><span class="text-white">Data : <span>Sun, Tue, Thu</span> </span></p>
+                        <p class="card-text text-warning fs-7"><span class="text-white">Time : <span>12:00 PM</span> </span></p>
+                    </div>
+                </div>
+                <div class="d-flex bg-green justify-content-center align-items-center rounded-bottom">
+                    <span class="fs-7 text-white mx-2 py-1">Active Membership Card</span>
+                    <img src="images/Line 9.svg" alt="">
+                    <span class="fs-7 text-white mx-2 py-1">Ends: 20 Apr 2024</span>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-my-family" role="tabpanel" aria-labelledby="pills-my-family-tab" tabindex="0">
+              <div class="card border-0 rounded-top col-md-8 col-lg-12 col-xl-10 mb-3" data-bs-toggle="modal" data-bs-target="#membership-two">
+                <div class="card border-0 rounded-top col-md-12 col-lg-12 col-xl-10 mb-3">
+                  <img src="images/Group 1000002843.png" class="card-img img-fluid" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-center">
+                      <p class="fs-7 text-white mb-1 p-0">Membership No</p>
+                      <h5 class="card-title text-white">123-456-789</h5>
+                      <h5 class="card-title text-white">Ahmed Mohamed</h5>
+                      <div class="d-flex justify-content-between">
+                          <p class="card-text text-warning fs-7"><span class="text-white">Data : <span>Sun, Tue, Thu</span> </span></p>
+                          <p class="card-text text-warning fs-7"><span class="text-white">Time : <span>12:00 PM</span> </span></p>
+                      </div>
+                  </div>
+                  <div class="d-flex bg-green justify-content-center align-items-center rounded-bottom">
+                      <span class="fs-7 text-white mx-2 py-1">Active Membership Card</span>
+                      <img src="images/Line 9.svg" alt="">
+                      <span class="fs-7 text-white mx-2 py-1">Ends: 20 Apr 2024</span>
+                  </div>
+              </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="membership-two" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="membership-twoLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header border-bottom-0">
+                          </div>
+                          <div class="modal-body text-center">
+                              <h3 class="fw-semibold">Your Membership is active!</h3>
+                              <p>What do you want to do with your membership?</p>
+                              <div class="d-flex flex-column justify-content-center align-items-center">
+                                  <a href="freeze.html" class="btn btn-primary mb-3 rounded-2 col-sm-10">Freeze Membership</a>
+                                  <a href="sick-leave.html" class="btn btn-outline-primary mb-3 rounded-2 col-sm-10">Sick Leave </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="membership" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="membershipLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+              </div>
+              <div class="modal-body text-center">
+                  <h3 class="fw-semibold">Your Membership is active!</h3>
+                  <p>What do you want to do with your membership?</p>
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                      <a href="freeze.html" class="btn btn-primary mb-3 rounded-2 col-sm-10">Freeze Membership</a>
+                      <a href="sick-leave.html" class="btn btn-outline-primary mb-3 rounded-2 col-sm-10">Sick Leave </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+              </div>
+              
+          </div>
+        </div>
+        <!-- end tap content  -->
+      </div>
+        </div>
+
+        </div>
+      </div>
+
+    </section>
+
+ 
+    <!-- Start Footer  -->
+    <script>
+      GlobalFooter();
+    </script>
+    <!-- End Footer  -->
+
+    <!-- Start Sidebar  -->
+    <script>
+      includeSidebar();
+    </script>
+    <!-- End Sidebar  -->
+
+    <!--====== BACK TO TP PART START ======-->
+    <script>
+      BtnBackToTop();
+    </script> 
+  <!--====== BACK TO TP PART ENDS ======-->
+
+    <!--====== WhatsApp PART START ======-->
+    <script>
+      WhatsApp();
+    </script> 
+  <!--====== WhatsApp PART ENDS ======-->
+
+
+    <!-- JS Files -->
+    <!-- animation library js file -->
+    <script src="Assets/aos/aos.js"></script>
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- pure counter js file -->
+    <script src="Assets/purecounter/purecounter_vanilla.js"></script>
+    <!-- glightbox js file -->
+    <script src="Assets/glightbox/js/glightbox.min.js"></script>
+      <!-- swiper js file -->
+    <script src="Assets/swiper/swiper-bundle.min.js"></script>
+    <!-- Slick js file -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <!-- main js file -->
+    <script src="js/script.js"></script>  
+    <script src="js/input.js"></script>
+
+   
+  </body>
+</html>

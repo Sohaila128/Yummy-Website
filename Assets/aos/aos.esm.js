@@ -521,7 +521,16 @@ var isDisabled = function isDisabled(optionDisable) {
 /**
  * Initializing AOS
  * - Create options merging defaults with user defined options
- * - Set attributes on <body> as global setting - css relies on it
+ * - Set attributes on <body>
+      <!-- Start loader  -->
+      <div id="loader" class="loader" style="display: none;">
+        <div class="spinner d-flex justify-content-evenly">
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+        </div>
+      </div>
+      <!-- End Loader  --> as global setting - css relies on it
  * - Attach preparing elements to options.startEvent,
  *   window resize and orientation change
  * - Attach function that handle scroll and everything connected to it

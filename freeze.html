@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- bootstrap-icon css file -->
+    <link rel="stylesheet" href="Assets/bootstrap-icon/bootstrap-icons.css">
+    <!-- animation library css file -->
+    <link rel="stylesheet" href="Assets/aos/aos.css">
+    <!-- glightbox css file -->
+    <link rel="stylesheet" href="Assets/glightbox/css/glightbox.min.css">
+      <!-- swiper css file -->
+      <link rel="stylesheet" href="Assets/swiper/swiper-bundle.min.css">
+    <!-- FancyBox  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- input cdn  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- include Navbar  -->
+    <script src="js/renderPageLayout.js"></script>
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.svg">
+
+    <title> Body Force Website </title>
+  </head>
+  <body>
+      <!-- Start loader  -->
+      <div id="loader" class="loader" style="display: none;">
+        <div class="spinner d-flex justify-content-evenly">
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+        </div>
+      </div>
+      <!-- End Loader  -->
+
+  
+
+    <!-- Start NavBar  -->
+    <script>
+      showCubNavbarAfterLogin();
+    </script>
+    <div class="border-bottom"></div>
+    <!-- End NavBar  -->
+
+    <section class="">
+      <div class="container-fluid">
+        <div class="row bg-secondary">
+          <button  class="btn btn-link d-lg-none d-flex text-decoration-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasfilter" aria-controls="offcanvasRight">
+            <i class="fa-solid fa-filter text-primary fs-3 d-flex justify-content-start p-0"></i>
+            <span class="fw-semibold mx-2">Filter</span>
+          </button>
+        <div class="col-lg-3 bg-secondary h-100 d-none d-lg-block">
+          <div class="py-8 d-flex flex-column justify-content-end align-items-end mx-6">
+            <div>
+              <div class="color-circle">
+                <img src="images/Mask group.svg" alt="">
+              </div>
+              <h6 class="fw-semibold mt-3">Sarah Ayman</h6>
+            </div>
+            <div class="nav flex-column nav-pills my-profile-club" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a href="my-profile-club.html" class="nav-link d-flex justify-content-start align-items-center text-black fw-semibold" >  <span class="mx-2">My Profile</span></a>
+              
+              <a href="my-profile-pass.html" class="nav-link d-flex justify-content-start align-items-center text-black fw-semibold" > 
+               <span class="mx-2"> Password</span></a>
+
+              <a href="my-profile-membership.html" class="nav-link d-flex justify-content-start align-items-center text-black fw-semibold active"> 
+               <span class="mx-2">  Membership</span></a>
+              <a href="my-profile-classes-history.html" class="nav-link d-flex justify-content-start align-items-center text-black fw-semibold"> 
+               <span class="mx-2">  Classes history</span></a>
+            </div>
+          </div>
+        </div>
+          <!-- Start Filter Sidebar  -->
+          <script>
+            filterSidebar();
+          </script>
+          <!-- Start Filter Sidebar  -->
+        <div class="col-lg-9 bg-white">
+          <div class="mx-3">      
+      <!-- start tap content  -->
+            <div class="container">
+              <div class="py-5">
+                <a href="my-profile-membership.html" class="text-primary text-decoration-none bg-transparent border-0"><img src="images/Arrow - Left 2.svg" alt="">Back to membership</a>
+
+                <div class="mx-3 col-md-5">
+                  <h4 class="fw-semibold text-blue mt-5">Freeze membership</h4>
+                  <p class="text-dark">Choose how many days of freeze are
+                    available to you</p>
+                  <form action="">
+                    <div class="mb-3">
+                      <label for="" class="fw-semibold mb-1 fs-6">Membership</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected> select </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="start-date" class="fw-semibold mb-1 fs-6">Freeze Membership Start Date</label>
+                      <input type="text" class="form-control datepicker" id="start-date">
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="end-date" class="fw-semibold mb-1 fs-6">Freeze Membership End Date</label>
+                      <input type="text" class="form-control datepicker" id="end-date">
+                    </div>
+                  
+                  
+
+
+                    <button class="btn btn-bg-black-primary rounded-2 col-12" data-bs-toggle="modal" data-bs-target="#request-freeze">Freeze Membership</button>
+
+                    <div class="mt-3">
+                      <span class="text-dark fs-7"><img src="images/Danger Circle.svg" alt=""> Your memebership ‘ll be freezed for 1 week only</span>
+                    </div>
+                    <!-- Modal request -->
+                  <div class="modal fade" id="request-freeze" tabindex="-1" aria-labelledby="request-freezeLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="text-center py-4">
+                          <h5 class="fw-semibold text-black">Your Request is Pending!</h5>
+                          <p>Our body force admin will check your request for freeze leave.</p>
+                          <div>  
+                            <h6 class="taps-text-color">From: <span class="text-black">19 April 2024</span> </h6>
+                            <h6 class="taps-text-color">To: <span class="text-black">19 April 2025</span> </h6>
+                            <button class="btn btn-secondary rounded-2 mb-3 fw-semibold">30 Days</button>
+                            <h6 class="taps-text-color">With Extra Fees: <span class="text-black">5 BD</span> </h6>
+                          </div>
+                          <div class="d-flex flex-column mt-4 justify-content-center align-items-center">
+                            <button type="button" class="btn btn-bg-black-primary rounded-3 mb-3 col-lg-8" data-bs-toggle="modal" data-bs-target="#checkout-freeze">Confirm Freeze Membership </button>
+                          <button type="button" class="btn btn-outline-primary rounded-3 mb-3 col-lg-8" data-bs-dismiss="modal">Cancel Freeze   </button>
+
+                          </div>
+                      </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              <!-- Modal request -->
+                    <!-- Modal checkout -->
+                  <div class="modal fade" id="checkout-freeze" tabindex="-1" aria-labelledby="checkout-freezeLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h3 class="fw-bold text-center text-black">Checkout </h3>
+                      <div class="py-3">
+                        <!-- heading-text  -->
+                        <div>
+                          <h5 class="text-blue fw-semibold mb-2">Extend Membership</h5>
+                          <div>
+                            <h6 class="taps-text-color fs-7">Membership Type: <span class="text-black">Fleixble</span> </h6>
+                            <h6 class="taps-text-color fs-7">Membership Class: <span class="text-black">Ladies-Personal Training</span> </h6>
+                            <h6 class="taps-text-color fs-7">Extend Start: <span class="text-black">19 April 2024</span> </h6>
+                            <h6 class="taps-text-color fs-7">Extend End:<span class="text-black">26 April 2024</span> </h6>
+                            <h6 class="taps-text-color fs-7">Freeze Extra Fees:<span class="text-black">5 BD</span> </h6>
+                            <span class="badge text-bg-primary py-2 mb-3">3 Session / <span>Extend</span> </span>
+    
+                          </div>
+                        </div>
+                        <!-- heading-text  -->
+                        <!-- form  -->
+                        <form action="" class="">
+                          <h5 class="text-blue fw-semibold mb-3">Payment Method</h5>
+                          <div class="bg-secondary rounded-1 p-3">
+                            <div class="d-flex align-items-center">
+                              <input class="form-check-input" type="radio" name="" id="" checked>
+                              <label for=""><div class="d-flex align-items-center mx-2 mt-1">
+                                <div>
+                                <img src="images/cash.svg" alt="">
+                              </div>
+                              <span class="mx-2">Cash on delivery (COD)</span>
+                            </div>
+                          </label>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center">
+                              <input class="form-check-input" type="radio" name="" id="">
+                              <label for=""><div class="d-flex align-items-center mx-2 mt-1">
+                                <div>
+                                <img src="images/Frame 1552.svg" alt="">
+                              </div>
+                              <span class="mx-2">Credit Card</span>
+                            </div>
+                          </label>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center">
+                              <input class="form-check-input" type="radio" name="" id="">
+                              <label for=""><div class="d-flex align-items-center mx-2 mt-1">
+                                <div>
+                                <img src="images/Frame 55.svg" alt="">
+                              </div>
+                              <span class="mx-2">Benefit Pay</span>
+                            </div>
+                          </label>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center">
+                              <input class="form-check-input" type="radio" name="" id="">
+                              <label for=""><div class="d-flex align-items-center mx-2 mt-1">
+                                <div>
+                                <img src="images/apple.svg" alt="">
+                              </div>
+                              <span class="mx-2">Apple Pay</span>
+                            </div>
+                          </label>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column mt-4 justify-content-center align-items-center">
+                          <button type="button" class="btn btn-bg-black-primary rounded-2 mt-4 mb-3 col-12  col-lg-8" data-bs-toggle="modal" data-bs-target="#freeze-accepted">Confirm Freeze </button>
+                          <button type="button" class="btn btn-outline-primary rounded-3 mb-3 col-12 col-lg-8" data-bs-dismiss="modal">Cancel Freeze   </button>
+                        </div>
+                        </form>
+    
+                        <!-- form  -->
+    
+                      </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              <!-- Modal checkout -->
+                    <!-- Modal freeze-accepted -->
+                  <div class="modal fade" id="freeze-accepted" tabindex="-1" aria-labelledby="freeze-acceptedLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body d-flex justify-content-center align-items-center flex-column">
+                        <div class="text-center py-4 col-lg-8">
+                          <div class="mb-3">
+                            <img src="images/Check 2.svg" />
+                          </div>
+                          <h5 class="fw-semibold text-center text-black">Your Membership will be </h5>
+                          
+                          <div>  
+                            <h6 class="taps-text-color">From: <span class="text-black">19 April 2024</span> </h6>
+                            <h6 class="taps-text-color">To: <span class="text-black">19 April 2025</span> </h6>
+                            <h6 class="taps-text-color">With Extra fees:
+                             <span class="text-black">  5 BD</span> </h6>
+                          
+
+                          </div>
+                          <div class="d-flex flex-column mt-4 justify-content-center align-items-center">
+                            <button type="button" class="btn btn-bg-black-primary rounded-3 mb-3 col-lg-8">1 week</button>
+                          </div>
+                      </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              <!-- Modal freeze-accepted -->
+
+                  </form>
+              </div>
+
+              </div>
+          </div>
+        <!-- end tap content  -->
+      </div>
+        </div>
+
+        </div>
+      </div>
+
+    </section>
+
+ 
+    <!-- Start Footer  -->
+    <script>
+      GlobalFooter();
+    </script>
+    <!-- End Footer  -->
+
+    <!-- Start Sidebar  -->
+    <script>
+      includeSidebar();
+    </script>
+    <!-- End Sidebar  -->
+
+    <!--====== BACK TO TP PART START ======-->
+    <script>
+      BtnBackToTop();
+    </script> 
+  <!--====== BACK TO TP PART ENDS ======-->
+
+    <!--====== WhatsApp PART START ======-->
+    <script>
+      WhatsApp();
+    </script> 
+  <!--====== WhatsApp PART ENDS ======-->
+
+
+    <!-- JS Files -->
+    <!-- animation library js file -->
+    <script src="Assets/aos/aos.js"></script>
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- pure counter js file -->
+    <script src="Assets/purecounter/purecounter_vanilla.js"></script>
+    <!-- glightbox js file -->
+    <script src="Assets/glightbox/js/glightbox.min.js"></script>
+      <!-- swiper js file -->
+    <script src="Assets/swiper/swiper-bundle.min.js"></script>
+    <!-- Slick js file -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <!-- main js file -->
+    <script src="js/script.js"></script>  
+    <script src="js/input.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $('.datepicker').datepicker({
+              format: 'yyyy-mm-dd',
+              autoclose: true
+          });
+      });
+  </script>
+  
+  </body>
+</html>

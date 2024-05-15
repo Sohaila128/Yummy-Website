@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- bootstrap-icon css file -->
+    <link rel="stylesheet" href="Assets/bootstrap-icon/bootstrap-icons.css">
+    <!-- animation library css file -->
+    <link rel="stylesheet" href="Assets/aos/aos.css">
+    <!-- glightbox css file -->
+    <link rel="stylesheet" href="Assets/glightbox/css/glightbox.min.css">
+      <!-- swiper css file -->
+      <link rel="stylesheet" href="Assets/swiper/swiper-bundle.min.css">
+    <!-- FancyBox  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- include Navbar  -->
+    <script src="js/renderPageLayout.js"></script>
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.svg">
+
+    <title> Body Force Website </title>
+  </head>
+  <body>
+      <!-- Start loader  -->
+      <div id="loader" class="loader" style="display: none;">
+        <div class="spinner d-flex justify-content-evenly">
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+        </div>
+      </div>
+      <!-- End Loader  -->
+
+    <!-- Start NavBar  -->
+    <script>
+    AfterLoginNavigation();
+    </script>
+    <!-- End NavBar  -->
+    
+    <section class="py-5">
+      <div class="container">
+        <!-- Header section  -->
+        <div class="d-flex">
+          <a class="text-decoration-none text-warning" href="index.html"> Home </a>
+          <div>
+            <img src="images/Arrow - Up 4.svg" alt="">
+          </div>
+          <span class="text-warning">My Cart </span>
+          <div>
+            <img src="images/Arrow - Up 5.svg" alt="">
+          </div>
+          <span class="fw-semibold text-primary">Checkout </span>
+        </div>
+        <div class="row mt-5">
+          <h4 class="fw-semibold text-black">Checkout </h4>
+          <div class="col-lg-8 mt-3">
+            <div class="d-flex justify-content-between">
+              <h5 class="fw-semibold text-black">Delivery Address</h5>
+              <a href="add-address.html" class="text-dark align-content-center"> <img src="images/Plus.svg" alt=""> Add Address</a>
+            </div>
+            <!-- start card  -->
+              <!-- card address  -->
+              <div class="mt-4">
+                <div class="card mb-3 border-card-color card-delete">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Home Address</h6>
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center mx-1 btn-delete cursor-pointer"><img src="images/trash.svg" alt=""> <span class="text-red fw-semibold mx-1">Delete</span></div>
+                  <!-- Button trigger modal -->
+                      <div class="d-flex align-items-center mx-1 mt-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAddress"><img src="images/edit-two.svg" alt=""> <span class="edit-text fw-semibold mx-1">Edit</span></div>
+                    </div>
+                  </div>
+                    <div class="card-title h5 d-flex align-items-center"><img src="images/Location.svg" alt=""><span>Manama, Bahrain</span></div>
+                    
+                  </div>
+                </div>
+                <!-- popup -->
+                <!-- Modal -->
+                <div class="modal fade" id="editAddress" tabindex="-1" aria-labelledby="editAddressLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content rounded-4 border-0">
+                      <div class="modal-header border-0">
+                        <h1 class="modal-title fs-5" id="editAddressLabel"></h1>
+                      </div>
+                      <div class="modal-body">
+                        <h4 class="fw-semibold text-black mb-3 text-center">Edit Address</h4>
+                        <form action="" class="container">
+                          <div class="row">
+                            <div class="mb-3 col-sm-6">
+                              <label for="" class="fw-semibold mb-1">City  <span>*</span> </label>
+                              <input type="text" class="form-control" placeholder="Town / City" name="" id="">
+                            </div>
+                            <div class="mb-3 col-sm-6">
+                              <label for="" class="fw-semibold mb-1">Region  <span>*</span> </label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="mb-3 col-sm-6">
+                              <label for="" class="fw-semibold mb-1">Street Address  <span>*</span> </label>
+                              <input type="text" class="form-control" placeholder="House number and street name" name="" id="">
+                            </div>
+                            <div class="mb-3 col-sm-6">
+                              <label for="" class="fw-semibold mb-1">Apt, suite, unit </label>
+                              <input type="text" class="form-control" placeholder="apartment, suite, unit, etc. (optional)" name="" id="">
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-start row">
+                            <button type="button" class="btn btn-primary rounded-2 col-lg-3 mb-3">Save</button>
+                            <button type="button" class="btn btn-outline-primary rounded-2 col-lg-3 mb-3 mx-lg-3" data-bs-dismiss="modal">Cancel</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- popup -->
+              </div>
+              <!-- card address  -->
+            <!-- end card  -->
+
+            <!-- start Payment Method -->
+            <div class="mt-5">
+                <h5 class="fw-semibold text-black">Payment Method </h5>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                      <label class="form-check-label text-dark" for="flexRadioDefault1">
+                        <img src="images/Frame 1171278842.svg" alt="">
+                        Cash on delivery (COD)
+                      </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                      <label class="form-check-label text-dark" for="flexRadioDefault2">
+                        <img src="images/Frame 152.svg" alt="">
+                        <img src="images/Frame 1171842.svg" alt="">
+                        Credit Card
+                      </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                      <label class="form-check-label text-dark" for="flexRadioDefault3">
+                        <img src="images/Frame 11842.svg" alt="">
+                        Benefit Pay
+                      </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                      <label class="form-check-label text-dark" for="flexRadioDefault4">
+                        <img src="images/Frame842.svg" alt="">
+                        Apple Pay
+                      </label>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- end Payment Method -->
+          </div>
+          <div class="col-lg-4 mt-3">
+            <h5 class="fw-semibold text-black">Order summery </h5>
+            <!-- start card  -->
+            <div class="mb-3 d-flex">
+              <div>
+                <img src="images/Group 1000002855.png" width="70" height="70" class="border rounded-2" alt="">
+              </div>
+              <div class="mx-2">
+                <h6 class="fw-semibold fs-7" style="white-space: wrap;">T-shirts with multiple colors, for men and lady (3X)</h6>
+                <h6 class="fw-semibold">170 BHD</h6>
+              </div>
+            </div>
+            <hr>
+            <div class="mb-3 d-flex">
+              <div>
+                <img src="images/Group 1000002855.png" width="70" height="70" class="border rounded-2" alt="">
+              </div>
+              <div class="mx-2">
+                <h6 class="fw-semibold fs-7" style="white-space: wrap;">T-shirts with multiple colors, for men and lady (3X)</h6>
+                <h6 class="fw-semibold">170 BHD</h6>
+              </div>
+            </div>
+            <hr>
+            
+            <!-- start card  -->
+            <div class="card mb-3">
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between">
+                  <h6 class="text-dark"> Subtotal : </h6>
+                  <h6 class="text-dark"> 400 BHD </h6>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="text-dark"> VAT(10%) </h6>
+                  <h6 class="text-dark"> 400 BHD </h6>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="text-dark"> Delivery </h6>
+                  <h6 class="text-dark"> 400 BHD </h6>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                  <h5 class="text-primary fw-bold"> Total </h5>
+                  <h5 class="text-primary fw-bold"> 600 BHD </h5>
+                </div>
+                <div>
+                <a href="confirmed.html">
+                  <button class="btn btn-primary rounded-2 col-12">Place Order</button>
+                </a> 
+                </div>
+            </div>
+            </div>
+
+            
+          </div>
+        </div>
+        </div>
+        </section>  
+
+
+  
+    <!-- Start Footer  -->
+    <script>
+      MainFooter();
+    </script>
+    <!-- End Footer  -->
+
+    <!-- Start Sidebar  -->
+    <script>
+      includeSidebar();
+    </script>
+
+<!-- End Sidebar  -->
+
+
+<!-- Start Footer  -->
+
+<!-- End Footer  -->
+    <!--====== BACK TO TP PART START ======-->
+    <script>
+      BtnBackToTop();
+    </script> 
+  <!--====== BACK TO TP PART ENDS ======-->
+
+    <!--====== WhatsApp PART START ======-->
+    <script>
+      WhatsApp();
+    </script> 
+  <!--====== WhatsApp PART ENDS ======-->
+
+
+    <!-- JS Files -->
+    <!-- animation library js file -->
+    <script src="Assets/aos/aos.js"></script>
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- pure counter js file -->
+    <script src="Assets/purecounter/purecounter_vanilla.js"></script>
+    <!-- glightbox js file -->
+    <script src="Assets/glightbox/js/glightbox.min.js"></script>
+      <!-- swiper js file -->
+    <script src="Assets/swiper/swiper-bundle.min.js"></script>
+    <!-- Slick js file -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <!-- main js file -->
+    <script src="js/script.js"></script>      
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var deleteButtons = document.querySelectorAll('.btn-delete');
+          deleteButtons.forEach(function(button) {
+              button.addEventListener('click', function() {
+                  var cardToDelete = this.closest('.card-delete');
+                  cardToDelete.remove();
+              });
+          });
+      });
+      </script>
+  </body>
+</html>

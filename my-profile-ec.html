@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- bootstrap-icon css file -->
+    <link rel="stylesheet" href="Assets/bootstrap-icon/bootstrap-icons.css">
+    <!-- animation library css file -->
+    <link rel="stylesheet" href="Assets/aos/aos.css">
+    <!-- glightbox css file -->
+    <link rel="stylesheet" href="Assets/glightbox/css/glightbox.min.css">
+      <!-- swiper css file -->
+      <link rel="stylesheet" href="Assets/swiper/swiper-bundle.min.css">
+    <!-- FancyBox  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- include Navbar  -->
+    <script src="js/renderPageLayout.js"></script>
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.svg">
+
+    <title> Body Force Website </title>
+  </head>
+  <body>
+      <!-- Start loader  -->
+      <div id="loader" class="loader" style="display: none;">
+        <div class="spinner d-flex justify-content-evenly">
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+        </div>
+      </div>
+      <!-- End Loader  -->
+
+    <!-- Start NavBar  -->
+    <script>
+      AfterLoginNavigation();
+    </script>
+    <!-- End NavBar  -->
+
+    <section class="py-5">
+    <div class="container">
+      <!-- Header section  -->
+      <div class="d-flex">
+        <a class="text-decoration-none text-warning" href="index.html"> Home </a>
+        <div>
+          <img src="images/Arrow - Up 4.svg" alt="">
+        </div>
+        <span class="fw-semibold text-primary">My Cart </span>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-3">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <h5 class="fw-semibold text-black mb-1">Hello Mariam, </h5>
+              <p class="text-dark">Welcome to your account.</p>
+            </div>
+            <div>
+              <button  class="btn btn-link d-lg-none d-flex text-decoration-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasfilter-my-profile-e-comerce" aria-controls="offcanvasRight">
+                <i class="fa-solid fa-filter text-primary fs-3 d-flex justify-content-start p-0"></i>
+                <span class="fw-semibold mx-2">Filter</span>
+              </button>
+            </div>
+          </div>
+          <div class="nav d-none d-lg-block flex-column nav-pills my-profile" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link d-flex justify-content-start align-items-center text-dark fw-semibold active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-order" type="button" role="tab" aria-controls="v-pills-order" aria-selected="true"> <img src="images/my orders.svg" alt="">  <span class="mx-2">My orders</span></button>
+            <button class="nav-link d-flex justify-content-start align-items-center text-dark fw-semibold" id="v-pills-wishlist-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist" aria-selected="false"> <img src="images/heart.svg" alt="">
+              <span class="mx-2">Wishlist</span>  </button>
+            <button class="nav-link d-flex justify-content-start align-items-center text-dark fw-semibold" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <img src="images/user.svg" alt="">
+              <span class="mx-2">My info</span></button>
+            <button class="nav-link d-flex justify-content-start align-items-center text-dark fw-semibold" id="v-pills-SignOut-tab" data-bs-toggle="pill" data-bs-target="#v-pills-SignOut" type="button" role="tab" aria-controls="v-pills-SignOut" aria-selected="false"> <img src="images/sign out.svg" alt="">
+             <span class="mx-2">  Sign out</span></button>
+          </div>
+        </div>
+        <!-- Filter sidebar  -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasfilter-my-profile-e-comerce" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <button  class="btn btn-link d-flex text-decoration-none">
+              <i class="fa-solid fa-filter text-primary fs-3 d-flex justify-content-start p-0"></i>
+              <span class="fw-semibold mx-2">Filter</span>
+            </button>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <div class="col-12 col-lg-4 col-xl-3 col-md-3  rounded-1 p-4 d-block h-100">
+                <div class="nav flex-column nav-pills my-profile" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link d-flex justify-content-start align-items-center text-dark fw-semibold active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-order" type="button" role="tab" aria-controls="v-pills-order" aria-selected="true"> <img src="images/my orders.svg" alt="">  <span class="mx-2">My orders</span></button>
+                  <button class="nav-link d-flex justify-content-start align-items-center text-dark fw-semibold" id="v-pills-wishlist-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist" aria-selected="false"> <img src="images/heart.svg" alt="">
+                    <span class="mx-2">Wishlist</span>  </button>
+                  <button class="nav-link d-flex justify-content-start align-items-center text-dark fw-semibold" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <img src="images/user.svg" alt="">
+                    <span class="mx-2">My info</span></button>
+                  <button class="nav-link d-flex justify-content-start align-items-center text-dark fw-semibold" id="v-pills-SignOut-tab" data-bs-toggle="pill" data-bs-target="#v-pills-SignOut" type="button" role="tab" aria-controls="v-pills-SignOut" aria-selected="false"> <img src="images/sign out.svg" alt="">
+                   <span class="mx-2">  Sign out</span></button>
+                </div>
+                
+              </div>
+        
+          </div>
+        </div>
+        <!-- Filter sidebar  -->
+        <div class="col-lg-9 ">
+          <div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab" tabindex="0">
+              <div class="order-details-container">
+                <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="current-order-tab" data-bs-toggle="tab" data-bs-target="#current-order-tab-pane" type="button" role="tab" aria-controls="current-order-tab-pane" aria-selected="true">Current Orders</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="past-order-tab" data-bs-toggle="tab" data-bs-target="#past-order-tab-pane" type="button" role="tab" aria-controls="past-order-tab-pane" aria-selected="false">Past Orders</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="current-order-tab-pane" role="tabpanel" aria-labelledby="current-order-tab" tabindex="0">
+                    <div class="card mb-3 mt-4">
+                      <div class="card-body">
+                        <h5 class="text-black fw-semibold">Order no : #123456789</h5>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Order Date <span class="fw-normal">: 2 June 2023 2:40 PM</span> </span>
+                          </div>
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Order Date <span class="fw-normal">: 2 June 2023 2:40 PM</span> </span>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Estimated Delivery Date <span class="fw-normal"> : 8 June 2023 </span> </span>
+                          </div>
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Payment Method  <span class="fw-normal">: Cash on delivery </span> </span>
+                          </div>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="col-lg-8 d-flex">
+                            <div>
+                              <img src="images/Frame 1171279233.png" width="75" class="rounded-2" alt="">
+                            </div>
+                            <div class="mx-2">
+                              <h6 class="fw-semibold text-black mb-1">T-shirts with multiple colors, for men and lady</h6>
+                              <h6 class="fs-7 text-dark mb-1">Size: medium, Color: blue,  Material: Plastic</h6>
+                              <h6 class="fs-7 text-dark mb-1">Seller: Artel Market</h6>
+                              <h6 class="fw-bold text-black mb-1 fs-7">170 BHD</h6>
+
+                            </div>
+                          </div>
+                          <div class="col-lg-4 d-flex justify-content-end align-items-center">
+                            <button class="btn btn-primary rounded-2 py-1 px-2" onclick="toggleDetails()">View details</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 mt-4">
+                      <div class="card-body">
+                        <h5 class="text-black fw-semibold">Order no : #123456789</h5>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Order Date <span class="fw-normal">: 2 June 2023 2:40 PM</span> </span>
+                          </div>
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Order Date <span class="fw-normal">: 2 June 2023 2:40 PM</span> </span>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Estimated Delivery Date <span class="fw-normal"> : 8 June 2023 </span> </span>
+                          </div>
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Payment Method  <span class="fw-normal">: Cash on delivery </span> </span>
+                          </div>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="col-lg-8 d-flex">
+                            <div>
+                              <img src="images/Frame 1171279233.png" width="75" class="rounded-2" alt="">
+                            </div>
+                            <div class="mx-2">
+                              <h6 class="fw-semibold text-black mb-1">T-shirts with multiple colors, for men and lady</h6>
+                              <h6 class="fs-7 text-dark mb-1">Size: medium, Color: blue,  Material: Plastic</h6>
+                              <h6 class="fs-7 text-dark mb-1">Seller: Artel Market</h6>
+                              <h6 class="fw-bold text-black mb-1 fs-7">170 BHD</h6>
+
+                            </div>
+                          </div>
+                          <div class="col-lg-4 d-flex justify-content-end align-items-center">
+                            <button class="btn btn-primary rounded-2 py-1 px-2" onclick="toggleDetails()">View details</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="past-order-tab-pane" role="tabpanel" aria-labelledby="past-order-tab" tabindex="0">
+                    <div class="card mb-3 mt-4">
+                      <div class="card-body">
+                        <h5 class="text-black fw-semibold">Order no : #123456789</h5>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Order Date <span class="fw-normal">: 2 June 2023 2:40 PM</span> </span>
+                          </div>
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Order Status : <span class="fw-semibold text-green">Completed</span> </span>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Estimated Delivery Date <span class="fw-normal"> : 8 June 2023 </span> </span>
+                          </div>
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Payment Method  <span class="fw-normal">: Cash on delivery </span> </span>
+                          </div>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="col-lg-8 d-flex">
+                            <div>
+                              <img src="images/Frame 1171279233.png" width="75" class="rounded-2" alt="">
+                            </div>
+                            <div class="mx-2">
+                              <h6 class="fw-semibold text-black mb-1">T-shirts with multiple colors, for men and lady</h6>
+                              <h6 class="fs-7 text-dark mb-1">Size: medium, Color: blue,  Material: Plastic</h6>
+                              <h6 class="fs-7 text-dark mb-1">Seller: Artel Market</h6>
+                              <h6 class="fw-bold text-black mb-1 fs-7">170 BHD</h6>
+
+                            </div>
+                          </div>
+                          <div class="col-lg-4 d-flex justify-content-end align-items-center">
+                            <button class="btn btn-primary rounded-2 py-1 px-2" onclick="toggleDetails()">View details</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 mt-4">
+                      <div class="card-body">
+                        <h5 class="text-black fw-semibold">Order no : #123456789</h5>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Order Date <span class="fw-normal">: 2 June 2023 2:40 PM</span> </span>
+                          </div>
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Order Status : <span class="fw-semibold text-red">Cancelled</span> </span>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Estimated Delivery Date <span class="fw-normal"> : 8 June 2023 </span> </span>
+                          </div>
+                          <div>
+                            <span class="fs-7 fw-semibold text-dark">Payment Method  <span class="fw-normal">: Cash on delivery </span> </span>
+                          </div>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="col-lg-8 d-flex">
+                            <div>
+                              <img src="images/Frame 1171279233.png" width="75" class="rounded-2" alt="">
+                            </div>
+                            <div class="mx-2">
+                              <h6 class="fw-semibold text-black mb-1">T-shirts with multiple colors, for men and lady</h6>
+                              <h6 class="fs-7 text-dark mb-1">Size: medium, Color: blue,  Material: Plastic</h6>
+                              <h6 class="fs-7 text-dark mb-1">Seller: Artel Market</h6>
+                              <h6 class="fw-bold text-black mb-1 fs-7">170 BHD</h6>
+
+                            </div>
+                          </div>
+                          <div class="col-lg-4 d-flex justify-content-end align-items-center">
+                            <button class="btn btn-primary rounded-2 py-1 px-2" onclick="toggleDetails()">View details</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- card details  -->
+                <div class="card-view-details hidden" id="card-details-toggle">
+                  <div>
+                    <a href="" class="text-decoration-none text-primary fw-bold fs-4"><img src="images/left.svg" alt=""> Order Details</a>
+                  </div>
+                  <div class="card mb-3 mt-4">
+                    <div class="card-body">
+                      <h5 class="text-black fw-semibold">Order no : #123456789</h5>
+                      <div class="d-flex justify-content-between mb-1">
+                        <div>
+                          <span class="fs-7 fw-semibold text-dark">Order Date <span class="fw-normal">: 2 June 2023 2:40 PM</span> </span>
+                        </div>
+                        <div>
+                          <span class="fs-7 fw-semibold text-dark">Order Status : <span class="fw-normal text-green fw-semibold">Inprogress</span> </span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between mb-1">
+                        <div>
+                          <span class="fs-7 fw-semibold text-dark">Estimated Delivery Date <span class="fw-normal"> : 8 June 2023 </span> </span>
+                        </div>
+                        <div>
+                          <span class="fs-7 fw-semibold text-dark">Payment Method  <span class="fw-normal">: Cash on delivery </span> </span>
+                        </div>
+                      </div>
+                      <div class="row mt-4">
+                        <div class="col-lg-12 d-flex">
+                          <div>
+                            <img src="images/Frame 1171279233.png" width="75" class="rounded-2" alt="">
+                          </div>
+                          <div class="mx-2">
+                            <h6 class="fw-semibold text-black mb-1">T-shirts with multiple colors, for men and lady</h6>
+                            <h6 class="fs-7 text-dark mb-1">Size: medium, Color: blue,  Material: Plastic</h6>
+                            <h6 class="fs-7 text-dark mb-1">Seller: Artel Market</h6>
+                            <h6 class="fw-bold text-black mb-1 fs-7">170 BHD</h6>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-4">
+                        <div class="col-lg-12 d-flex">
+                          <div>
+                            <img src="images/Frame 1171279233.png" width="75" class="rounded-2" alt="">
+                          </div>
+                          <div class="mx-2">
+                            <h6 class="fw-semibold text-black mb-1">T-shirts with multiple colors, for men and lady</h6>
+                            <h6 class="fs-7 text-dark mb-1">Size: medium, Color: blue,  Material: Plastic</h6>
+                            <h6 class="fs-7 text-dark mb-1">Seller: Artel Market</h6>
+                            <h6 class="fw-bold text-black mb-1 fs-7">170 BHD</h6>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <!-- card details  -->
+              
+              </div>
+              <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab" tabindex="0">
+                <div>
+                  <div>
+                    <h5 class="fw-semibold text-black">My Wishlist </h5>
+                  </div>
+                  <div class="row">
+                    <!-- row  -->
+                    <div class="card rounded-4 border-0 p-1 profile-card col-lg-3 col-md-4 col-6 position-relative">
+                      <i class="fa-regular fa-heart fa-solid text-black fs-6 link-primary cursor-pointer mt-1 position-absolute top-0 end-custom heartIcon"></i>
+                      <div class="card-body d-flex flex-column"> 
+                        <a href="product-details.html">
+                          <div class="box rounded-3">
+                            <div class="d-flex rounded-2 img-wrapper">
+                              <img src="images/still-life-rendering-jackets-display.jpg" class="home-cards-img rounded-2 mx-auto object-fit-cover w-100 h-100" alt="..."> 
+                            </div>
+                          </div>
+                        </a>
+                        <div class="mt-4">
+                          <h6 class="card-text text-black fw-bold mb-0 fs-14">Sport Jacket Nike</h6>
+                          <p class="card-title text-card-clothes mb-0 fs-7">Long sleeve sweatshirt</p>
+                          <p class="card-title text-card-clothes fs-7">Fit-In size</p>
+                          <div class="d-flex align-items-center">
+                            <h6 class="fw-bold text-primary">49.5 BD</h6>
+                            <h6 class="text-decoration-line-through fs-7 mx-2 text-dark">60.00 BD</h6>
+                          </div>
+                          <button class="btn btn-primary rounded-2"> <img src="images/Add to cart.svg" alt=""> Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card rounded-4 border-0 p-1 profile-card col-lg-3 col-md-4 col-6 position-relative">
+                      <i class="fa-regular fa-heart fa-solid text-black fs-6 link-primary cursor-pointer mt-1 position-absolute top-0 end-custom heartIcon"></i>
+                      <div class="card-body d-flex flex-column"> 
+                        <a href="product-details.html">
+                          <div class="box rounded-3">
+                            <div class="d-flex rounded-2 img-wrapper">
+                              <img src="images/34551.jpg" class="home-cards-img rounded-2 mx-auto object-fit-cover w-100 h-100" alt="..."> 
+                            </div>
+                          </div>
+                        </a>
+                        <div class="mt-4">
+                          <h6 class="card-text text-black fw-bold mb-0 fs-14">Sport Jacket Nike</h6>
+                          <p class="card-title text-card-clothes mb-0 fs-7">Long sleeve sweatshirt</p>
+                          <p class="card-title text-card-clothes fs-7">Fit-In size</p>
+                          <div class="d-flex align-items-center">
+                            <h6 class="fw-bold text-primary">49.5 BD</h6>
+                            <h6 class="text-decoration-line-through fs-7 mx-2 text-dark">60.00 BD</h6>
+                          </div>
+                          <button class="btn btn-primary rounded-2"> <img src="images/Add to cart.svg" alt=""> Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="card rounded-4 border-0 p-1 profile-card col-lg-3 col-md-4 col-6 position-relative">
+                      <i class="fa-regular fa-heart fa-solid text-black fs-6 link-primary cursor-pointer mt-1 position-absolute top-0 end-custom heartIcon"></i>
+                      <div class="card-body d-flex flex-column"> 
+                        <a href="product-details.html">
+                          <div class="box rounded-3">
+                            <div class="d-flex rounded-2 img-wrapper">
+                              <img src="images/still-life-rendering-jackets-display (1).jpg" class="home-cards-img rounded-2 mx-auto object-fit-cover w-100 h-100" alt="..."> 
+                            </div>
+                          </div>
+                        </a>
+                        <div class="mt-4">
+                          <h6 class="card-text text-black fw-bold mb-0 fs-14">Sport Jacket Nike</h6>
+                          <p class="card-title text-card-clothes mb-0 fs-7">Long sleeve sweatshirt</p>
+                          <p class="card-title text-card-clothes fs-7">Fit-In size</p>
+                          <div class="d-flex align-items-center">
+                            <h6 class="fw-bold text-primary">49.5 BD</h6>
+                            <h6 class="text-decoration-line-through fs-7 mx-2 text-dark">60.00 BD</h6>
+                          </div>
+                          <button class="btn btn-primary rounded-2"> <img src="images/Add to cart.svg" alt=""> Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="card rounded-4 border-0 p-1 profile-card col-lg-3 col-md-4 col-6 position-relative">
+                      <i class="fa-regular fa-heart fa-solid text-black fs-6 link-primary cursor-pointer mt-1 position-absolute top-0 end-custom heartIcon"></i>
+                      <div class="card-body d-flex flex-column"> 
+                        <a href="product-details.html">
+                          <div class="box rounded-3">
+                            <div class="d-flex rounded-2 img-wrapper">
+                              <img src="images/43402.jpg" class="home-cards-img rounded-2 mx-auto object-fit-cover w-100 h-100" alt="..."> 
+                            </div>
+                          </div>
+                        </a>
+                        <div class="mt-4">
+                          <h6 class="card-text text-black fw-bold mb-0 fs-14">Sport Jacket Nike</h6>
+                          <p class="card-title text-card-clothes mb-0 fs-7">Long sleeve sweatshirt</p>
+                          <p class="card-title text-card-clothes fs-7">Fit-In size</p>
+                          <div class="d-flex align-items-center">
+                            <h6 class="fw-bold text-primary">49.5 BD</h6>
+                            <h6 class="text-decoration-line-through fs-7 mx-2 text-dark">60.00 BD</h6>
+                          </div>
+                          <button class="btn btn-primary rounded-2"> <img src="images/Add to cart.svg" alt=""> Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+        
+                </div> <!-- End row-->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="fw-semibold text-black">My Info </h4>
+                    <div>
+                      <img src="images/Group 39782.svg" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="mb-3">
+                      <h6 class="fw-semibold">Name</h6>
+                      <p>Mariam Ahmed</p>
+                    </div>
+                    <div class="mb-3">
+                      <h6 class="fw-semibold">Email</h6>
+                      <p>Mariamahmed33@gmail.com</p>
+                    </div>
+                    <div class="mb-3">
+                      <h6 class="fw-semibold">Phone number</h6>
+                      <p>+9734545469</p>
+                    </div>
+                    <div class="mb-3">
+                      <button class="fw-semibold bg-transparent border-0 text-red">Delete Account</button>
+                    </div>
+                  </div>
+                  <!-- card address  -->
+                  <div class="mt-5">
+                    <h4 class="fw-semibold text-black">My Addresses</h4>
+                    <div class="card mb-3 border-card-color card-delete">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Home Address</h6>
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex align-items-center mx-1 btn-delete cursor-pointer"><img src="images/trash.svg" alt=""> <span class="text-red fw-semibold mx-1">Delete</span></div>
+                      <!-- Button trigger modal -->
+                          <div class="d-flex align-items-center mx-1 mt-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAddress"><img src="images/edit-two.svg" alt=""> <span class="edit-text fw-semibold mx-1">Edit</span></div>
+                        </div>
+                      </div>
+                        <div class="card-title h5 d-flex align-items-center"><img src="images/Location.svg" alt=""><span>Manama, Bahrain</span></div>
+                        
+                      </div>
+                    </div>
+                    <!-- popup -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="editAddress" tabindex="-1" aria-labelledby="editAddressLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content rounded-4 border-0">
+                          <div class="modal-header border-0">
+                            <h1 class="modal-title fs-5" id="editAddressLabel"></h1>
+                          </div>
+                          <div class="modal-body">
+                            <h4 class="fw-semibold text-black mb-3 text-center">Edit Address</h4>
+                            <form action="" class="container">
+                              <div class="row">
+                                <div class="mb-3 col-sm-6">
+                                  <label for="" class="fw-semibold mb-1">City  <span>*</span> </label>
+                                  <input type="text" class="form-control" placeholder="Town / City" name="" id="">
+                                </div>
+                                <div class="mb-3 col-sm-6">
+                                  <label for="" class="fw-semibold mb-1">Region  <span>*</span> </label>
+                                  <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="mb-3 col-sm-6">
+                                  <label for="" class="fw-semibold mb-1">Street Address  <span>*</span> </label>
+                                  <input type="text" class="form-control" placeholder="House number and street name" name="" id="">
+                                </div>
+                                <div class="mb-3 col-sm-6">
+                                  <label for="" class="fw-semibold mb-1">Apt, suite, unit </label>
+                                  <input type="text" class="form-control" placeholder="apartment, suite, unit, etc. (optional)" name="" id="">
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-start row">
+                                <button type="button" class="btn btn-primary rounded-2 col-lg-3 mb-3">Save</button>
+                                <button type="button" class="btn btn-outline-primary rounded-2 col-lg-3 mb-3 mx-lg-3" data-bs-dismiss="modal">Cancel</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- popup -->
+                  </div>
+                  <!-- card address  -->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-SignOut" role="tabpanel" aria-labelledby="v-pills-SignOut-tab" tabindex="0">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>      
+    </section>
+
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row row-background py-4">
+          <div class="col-8">
+            <h5 class="card-title text-white">Super discount on more than 100 </br> USD</h5>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <button class="btn btn-white rounded-2 fw-semibold py-1 px-3">Shop now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Start Footer  -->
+    <script>
+      MainFooter();
+    </script>
+    <!-- End Footer  -->
+
+    <!-- Start Sidebar  -->
+    <script>
+      includeSidebar();
+    </script>
+    <!-- End Sidebar  -->
+
+    <!--====== BACK TO TP PART START ======-->
+    <script>
+      BtnBackToTop();
+    </script> 
+  <!--====== BACK TO TP PART ENDS ======-->
+
+    <!--====== WhatsApp PART START ======-->
+    <script>
+      WhatsApp();
+    </script> 
+  <!--====== WhatsApp PART ENDS ======-->
+
+
+    <!-- JS Files -->
+    <!-- animation library js file -->
+    <script src="Assets/aos/aos.js"></script>
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- pure counter js file -->
+    <script src="Assets/purecounter/purecounter_vanilla.js"></script>
+    <!-- glightbox js file -->
+    <script src="Assets/glightbox/js/glightbox.min.js"></script>
+      <!-- swiper js file -->
+    <script src="Assets/swiper/swiper-bundle.min.js"></script>
+    <!-- Slick js file -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <!-- main js file -->
+    <script src="js/script.js"></script>  
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var deleteButtons = document.querySelectorAll('.btn-delete');
+          deleteButtons.forEach(function(button) {
+              button.addEventListener('click', function() {
+                  var cardToDelete = this.closest('.card-delete');
+                  cardToDelete.remove();
+              });
+          });
+      });
+      </script>
+      <script>
+  function toggleDetails() {
+    var detailsToggle = document.querySelector(".card-view-details");
+    var orderDetailsContainer = document.querySelector(".order-details-container");
+    if (detailsToggle.classList.contains("hidden")) {
+        detailsToggle.classList.remove("hidden");
+        orderDetailsContainer.classList.add("hidden");
+    } else {
+        detailsToggle.classList.add("hidden");
+        orderDetailsContainer.classList.remove("hidden");
+    }
+}
+
+      </script>
+  </body>
+</html>
