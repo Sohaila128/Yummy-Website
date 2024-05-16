@@ -37,12 +37,22 @@ button{
     color: white;
   }
 }
+.btn-primary{
+  background-color: $primaryColor;
+  color: white;
+  &:hover{
+    color: $primaryColor !important;
+    background-color: transparent !important;
+    border: 1px solid $primaryColor !important;
+  }
+}
 .btn-bg-black-primary{
   color: #FFF !important;
   background-color: $bgBlackPrimary !important;
   &:hover{
-    color: $bgBlackPrimary;
+    color: $bgBlackPrimary !important;
     border: 1px solid $bgBlackPrimary;
+    background-color: transparent !important;
   }
 }
 .btn-color-primary-two{
@@ -788,6 +798,10 @@ input{
 // Global Footer 
 .Footer-global{
   background-color: $bgBlackPrimary !important;
+}
+.hover-link-footer:hover{
+  transform: translateX(5px) !important; 
+  transition: transform 0.3s ease !important;
 }
 // Privacy Policy 
 .text-privacy{

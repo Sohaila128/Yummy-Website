@@ -51,7 +51,7 @@ function ECommerceNavigation() {
               <a class="nav-link text-black link-primary" href="login.html">Login</a>
             </li>
           </ul>
-          <a href="sign-up.html">
+          <a href="sign-up.html" class="text-decoration-none">
             <button class="btn btn-primary d-none d-xl-block" style="white-space: nowrap;">Get started</button>
           </a>
       </div>
@@ -189,7 +189,7 @@ function GlobalNavigation() {
         <a href="login.html" class="btn btn-white rounded-5 fw-semibold mx-1 text-black d-flex align-items-center text-decoration-none  d-none d-lg-flex" href="">
           Login
         </a>
-        <a href="sign-up.html" class="btn btn-color-primary-two d-flex align-items-center text-decoration-none d-none d-lg-flex">
+        <a href="sign-up.html" class="btn btn-color-primary-two d-flex align-items-center text-decoration-none d-none d-lg-flex text-decoration-none">
           Get started
         </a>
         
@@ -365,17 +365,17 @@ function MainFooter() {
       <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
         <h6 class="text-secondary fw-bold">Store</h6>
         <ul class="list-unstyled">
-          <li><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Supplements</a></li>
-          <li><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Restaurant</a></li>
-          <li><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Cafe</a></li>
+          <li class="hover-link-footer"><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Supplements</a></li>
+          <li class="hover-link-footer"><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Restaurant</a></li>
+          <li class="hover-link-footer"><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Cafe</a></li>
         </ul> 
       </div>
 
       <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
         <h6 class="text-secondary fw-bold">For Users</h6>
         <ul class="list-unstyled">
-          <li><a href="Terms-Conditions.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Terms & Conditions</a></li>
-          <li><a href="privacy-policy.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Privacy Policy</a></li>
+          <li class="hover-link-footer"><a href="Terms-Conditions.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Terms & Conditions</a></li>
+          <li class="hover-link-footer"><a href="privacy-policy.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Privacy Policy</a></li>
         </ul> 
       </div>
 
@@ -383,8 +383,8 @@ function MainFooter() {
       <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
         <h6 class="text-secondary fw-bold"> Support</h6>
         <ul class="list-unstyled">
-          <li><a href="about-us.html" class="text-decoration-none text-secondary link-secondary fs-6">About Us</a></li>
-          <li><a href="contact-us.html" class="text-decoration-none text-secondary link-secondary fs-6">Contact Us</a></li>
+          <li class="hover-link-footer"><a href="about-us.html" class="text-decoration-none text-secondary link-secondary fs-6">About Us</a></li>
+          <li class="hover-link-footer"><a href="contact-us.html" class="text-decoration-none text-secondary link-secondary fs-6">Contact Us</a></li>
         
         </ul>  
       </div>
@@ -460,18 +460,17 @@ function GlobalFooter() {
       <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
         <h6 class="text-secondary fw-bold">Store</h6>
         <ul class="list-unstyled">
-          <li><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Supplements</a></li>
-          <li><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Restaurant</a></li>
-          <li><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Cafe</a></li>
+          <li class="hover-link-footer"><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Supplements</a></li>
+          <li class="hover-link-footer"><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Restaurant</a></li>
+          <li class="hover-link-footer"><a href="clothes.html" class="text-decoration-none text-secondary link-secondary fs-6">Cafe</a></li>
         </ul> 
       </div>
 
       <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
         <h6 class="text-secondary fw-bold">Explore</h6>
         <ul class="list-unstyled">
-          <li><a href="trainer-details.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Find Classes</a></li>
-          <li><a href="find-trainers.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Find Trainers</a></li>
-          <li><a href="loyalty-points.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Loyalty Points</a></li>
+          <li class="hover-link-footer"><a href="find-trainers.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Find Trainers</a></li>
+          <li class="hover-link-footer"><a href="loyalty-points.html" class="text-decoration-none text-secondary link-secondary fs-6" style="white-space: nowrap;">Loyalty Points</a></li>
         </ul> 
       </div>
 
@@ -479,8 +478,8 @@ function GlobalFooter() {
       <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
         <h6 class="text-secondary fw-bold"> Support</h6>
         <ul class="list-unstyled">
-          <li><a href="about-us.html" class="text-decoration-none text-secondary link-secondary fs-6">About Us</a></li>
-          <li><a href="contact-us.html" class="text-decoration-none text-secondary link-secondary fs-6">Contact Us</a></li>
+          <li class="hover-link-footer"><a href="about-us.html" class="text-decoration-none text-secondary link-secondary fs-6">About Us</a></li>
+          <li class="hover-link-footer"><a href="contact-us.html" class="text-decoration-none text-secondary link-secondary fs-6">Contact Us</a></li>
         
         </ul>  
       </div>
@@ -531,8 +530,8 @@ function GlobalFooter() {
           </div>
           <div class="">
           <ul class="list-unstyled d-flex justify-content-between">
-          <li><a href="terms-conditions.html" class="text-decoration-none text-white mx-2 fs-7">Terms and conditions</a></li>
-          <li><a href="privacy-policy.html" class="text-decoration-none text-white mx-2 fs-7">Privacy police </a></li>
+          <li class="hover-link-footer"><a href="terms-conditions.html" class="text-decoration-none text-white mx-2 fs-7">Terms and conditions</a></li>
+          <li class="hover-link-footer"><a href="privacy-policy.html" class="text-decoration-none text-white mx-2 fs-7">Privacy police </a></li>
         </ul>
           </div>
       </div>

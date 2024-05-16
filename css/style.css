@@ -37,13 +37,24 @@ button {
   color: white;
 }
 
+.btn-primary {
+  background-color: #231F20;
+  color: white;
+}
+.btn-primary:hover {
+  color: #231F20 !important;
+  background-color: transparent !important;
+  border: 1px solid #231F20 !important;
+}
+
 .btn-bg-black-primary {
   color: #FFF !important;
   background-color: #2B2B2B !important;
 }
 .btn-bg-black-primary:hover {
-  color: #2B2B2B;
+  color: #2B2B2B !important;
   border: 1px solid #2B2B2B;
+  background-color: transparent !important;
 }
 
 .btn-color-primary-two {
@@ -773,6 +784,11 @@ input:focus {
 
 .Footer-global {
   background-color: #2B2B2B !important;
+}
+
+.hover-link-footer:hover {
+  transform: translateX(5px) !important;
+  transition: transform 0.3s ease !important;
 }
 
 .text-privacy {

@@ -1,18 +1,18 @@
 // Loading 
-document.addEventListener("DOMContentLoaded", function() {
-  var loader = document.querySelector('.loader');
-  if (loader) {
-    loader.style.display = 'block';
+// document.addEventListener("DOMContentLoaded", function() {
+//   var loader = document.querySelector('.loader');
+//   if (loader) {
+//     loader.style.display = 'block';
     
-      setTimeout(function(){
-          loader.style.opacity = '0';
-          setTimeout(function(){
-            loader.style.display = 'none';
-          }, 2000);
-        }, 2000);
-  }
-});
-        //===== Back to top =====//
+//       setTimeout(function(){
+//           loader.style.opacity = '0';
+//           setTimeout(function(){
+//             loader.style.display = 'none';
+//           }, 2000);
+//         }, 2000);
+//   }
+// });
+  //===== Back to top =====//
 //Get the button
 let mybutton = document.querySelector(".back-to-top");
 
@@ -257,6 +257,24 @@ function backToProfile() {
   personalInfoSection.style.display = 'block';
   familyEditsSection.style.display = 'none';
 }
+function toggleSectionsTwo() {
+  event.preventDefault();
+  var saveInformationSection = document.querySelector('.save-information');
+  var updateProfileSection = document.querySelector('.update-profile');
+
+  saveInformationSection.style.display = 'none';
+  updateProfileSection.style.display = 'block';
+}
+
+function backToUpdateSection() {
+  event.preventDefault();
+  var saveInformationSection = document.querySelector('.save-information');
+  var updateProfileSection = document.querySelector('.update-profile');
+
+  saveInformationSection.style.display = 'block';
+  updateProfileSection.style.display = 'none';
+}
+
 
 
 // membership 
