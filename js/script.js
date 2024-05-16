@@ -1,17 +1,17 @@
 // Loading 
-// document.addEventListener("DOMContentLoaded", function() {
-//   var loader = document.querySelector('.loader');
-//   if (loader) {
-//     loader.style.display = 'block';
+document.addEventListener("DOMContentLoaded", function() {
+  var loader = document.querySelector('.loader');
+  if (loader) {
+    loader.style.display = 'block';
     
-//       setTimeout(function(){
-//           loader.style.opacity = '0';
-//           setTimeout(function(){
-//             loader.style.display = 'none';
-//           }, 2000);
-//         }, 2000);
-//   }
-// });
+      setTimeout(function(){
+          loader.style.opacity = '0';
+          setTimeout(function(){
+            loader.style.display = 'none';
+          }, 2000);
+        }, 2000);
+  }
+});
   //===== Back to top =====//
 //Get the button
 let mybutton = document.querySelector(".back-to-top");
